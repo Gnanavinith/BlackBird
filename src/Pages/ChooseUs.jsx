@@ -63,7 +63,7 @@ const ChooseUs = () => {
   };
 
   return (
-    <div className="w-full md:w-3/4 lg:w-5xl xl:w-6xl mx-auto md:mt-10  h-auto shadow-[10px_10px_20px_rgba(0,0,0,0.3),_inset_4px_4px_10px_rgba(255,255,255,0.2)] hover:shadow-[inset_5px_5px_15px_rgba(0,0,0,0.4),_inset_-4px_-4px_15px_rgba(255,255,255,0.2)] transition-shadow duration-300 rounded-xl p-10">
+    <div className="w-full md:w-3/4 lg:w-5xl xl:w-6xl mx-auto md:mt-10  h-auto  shadow-2xl rounded-xl p-10">
       {/* Section Title */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-black">Why Choose Us?</h1>

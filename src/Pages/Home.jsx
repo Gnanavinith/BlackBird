@@ -20,14 +20,14 @@ const Home = ({ scrollToSection, aboutRef }) => { // Receive scrollToSection and
   };
 
   return (
-    <section className="w-full md:w-3/4 lg:w-5xl xl:w-6xl mx-auto md:mt-10 h-auto shadow-[10px_10px_20px_rgba(0,0,0,0.3),_inset_4px_4px_10px_rgba(255,255,255,0.2)] hover:shadow-[inset_5px_5px_15px_rgba(0,0,0,0.4),_inset_-4px_-4px_15px_rgba(255,255,255,0.2)] transition-shadow duration-300 rounded-xl p-10 flex flex-col justify-between">
+    <section className="w-full md:w-3/4 lg:w-5xl xl:w-6xl mx-auto md:mt-10 h-auto  shadow-2xl rounded-xl p-10 flex flex-col justify-between">
 
       {/* Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
           <h1 className="text-4xl font-bold text-black leading-snug">
-            We <span className="text-red-600"> #BlackBird</span> <br />
+            We <span className="text-red-600"> #BlackBirrd</span> <br />
             Empowering Businesses with Cutting-Edge Software Solutions
           </h1>
           <p className="mt-4 text-lg text-gray-700">
@@ -64,8 +64,8 @@ const Home = ({ scrollToSection, aboutRef }) => { // Receive scrollToSection and
 
       {/* Conditionally Render Email Component in Center */}
       {showEmail && (
-        <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-opacity-50">
-          <div className="bg-white p-10 max-w-lg w-full relative shadow-[10px_10px_20px_rgba(0,0,0,0.3),_inset_4px_4px_10px_rgba(255,255,255,0.2)] hover:shadow-[inset_5px_5px_15px_rgba(0,0,0,0.4),_inset_-4px_-4px_15px_rgba(255,255,255,0.2)] transition-shadow duration-300">
+        <div className="fixed inset-0 z-1 flex items-center justify-center backdrop-blur-sm bg-opacity-50 ">
+          <div className="bg-white p-10 max-w-lg w-full relative  rounded-2xl">
             {/* Close button positioned in top right corner inside the form */}
             <button
               onClick={handleCloseEmail}

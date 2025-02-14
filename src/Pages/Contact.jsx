@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <header className="group flex flex-col items-center justify-center border-none rounded-2xl ww-full md:w-3/4 lg:w-5xl xl:w-6xl mx-auto md:mt-10 h-auto shadow-[10px_10px_20px_rgba(0,0,0,0.3),_inset_4px_4px_10px_rgba(255,255,255,0.2)] hover:shadow-[inset_5px_5px_15px_rgba(0,0,0,0.4),_inset_-4px_-4px_15px_rgba(255,255,255,0.2)] transition-shadow duration-300  p-10">
+    <header className="group flex flex-col items-center justify-center border-none rounded-2xl ww-full md:w-3/4 lg:w-5xl xl:w-6xl mx-auto md:mt-10 h-auto  shadow-2xl  p-10">
       
       <div className="relative w-full flex justify-center">
         <img 
@@ -89,7 +89,7 @@ const Contact = () => {
 
       {/* Conditionally Render Career Form */}
       {showCareer && (
-        <div className="relative p-10 shadow-[10px_10px_20px_rgba(0,0,0,0.3),_inset_4px_4px_10px_rgba(255,255,255,0.2)] hover:shadow-[inset_5px_5px_15px_rgba(0,0,0,0.4),_inset_-4px_-4px_15px_rgba(255,255,255,0.2)] transition-shadow duration-300 rounded-xl">
+        <div className="relative p-10 shadow-2xl rounded-xl">
           <Career />
           <button
             onClick={handleCloseCareer}

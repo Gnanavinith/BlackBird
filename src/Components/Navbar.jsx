@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MdOutlineScheduleSend } from "react-icons/md";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaXmark } from "react-icons/fa6";
+import { Bird } from 'lucide-react';
 import Email from "./Email"; // Import Email component
 
 const Navbar = ({ homeRef, aboutRef, servicesRef, contactRef, scrollToSection }) => {
@@ -24,10 +25,27 @@ const Navbar = ({ homeRef, aboutRef, servicesRef, contactRef, scrollToSection })
       <header className="border-none shadow-2xl bg-white relative">
         <nav className="flex justify-between items-center px-6 py-5">
           {/* Logo */}
-          <div className="text-center">
-            <h1 className="font-semibold text-xl">BLACK BIRD</h1>
-            <p className="text-xs mt-[-2px] tracking-wider">Software Innovations</p>
-          </div>
+          <div className="flex items-center gap-3">
+      {/* Logo Icon */}
+      <div className="relative group">
+        <Bird 
+          className="w-10 h-12 text-black  transition-transform duration-300 group-hover:scale-110 group-hover:text-blue-700"
+          strokeWidth={1.8}
+        />
+        {/* Animated Underline */}
+        <div className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-600 rounded-full transition-all duration-500 group-hover:w-full group-hover:left-0"></div>
+      </div>
+
+      {/* Text Section */}
+      <div className="text-left">
+        <h1 className="font-bold text-xl tracking-wide text-gray-900">
+          BLACK BIRRD
+        </h1>
+        <p className="font-medium text-gray-500 tracking-wider">
+          Software Innovations
+        </p>
+      </div>
+    </div>
 
           {/* Desktop Nav Links */}
           <ul className="hidden md:flex space-x-6 items-center">
@@ -78,7 +96,7 @@ const Navbar = ({ homeRef, aboutRef, servicesRef, contactRef, scrollToSection })
 
       {/* Email Modal */}
       {isModalOpen && (
-       <div className="fixed inset-0 bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-50">
+       <div className="fixed inset-0 bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-50 rounded-2xl">
 
           <div className="bg-white p-10 rounded-lg shadow-lg max-w-md w-full relative">
             {/* Close Button */}

@@ -18,24 +18,18 @@ const About = () => {
   return (
     <section
       className="w-full md:w-3/4 lg:w-5xl xl:w-6xl mx-auto md:mt-10 h-auto
-      shadow-[10px_10px_20px_rgba(0,0,0,0.3),_inset_4px_4px_10px_rgba(255,255,255,0.2)] 
-      hover:shadow-[inset_5px_5px_15px_rgba(0,0,0,0.4),_inset_-4px_-4px_15px_rgba(255,255,255,0.2)] 
-      transition-shadow duration-300 rounded-xl p-5 sm:p-8 md:p-10"
+       shadow-2xl rounded-xl p-5 sm:p-8 md:p-10"
     >
       {/* Image Section with Text Overlay */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
         {/* Image */}
-        <div className="relative w-full flex justify-center">
+        <div className=" w-full flex justify-center">
           <img
             src={AboutImage}
             alt="About BlackBird"
             className="w-full rounded-lg shadow-md object-cover max-h-[300px] sm:max-h-[400px]"
           />
-          <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                        text-red-600 font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl 
-                        text-center  px-4 py-2 rounded-md  w-auto">
-            #BlackBird
-          </p>
+         
         </div>
 
         {/* About Text */}
@@ -100,8 +94,8 @@ const About = () => {
 
       {/* Conditionally Render Email Component */}
       {showEmail && (
-        <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-opacity-50 ">
-          <div className="bg-white p-10 rounded-xl max-w-lg w-full relative shadow-[10px_10px_20px_rgba(0,0,0,0.3),_inset_4px_4px_10px_rgba(255,255,255,0.2)] hover:shadow-[inset_5px_5px_15px_rgba(0,0,0,0.4),_inset_-4px_-4px_15px_rgba(255,255,255,0.2)] transition-shadow duration-300">
+        <div className="fixed z-1 inset-0 flex items-center justify-center backdrop-blur-sm bg-opacity-50 ">
+          <div className="bg-white p-10 rounded-xl max-w-lg w-full relative ">
             {/* Close button positioned in top right corner inside the form */}
             <button
               onClick={handleCloseEmail} // Close Email component

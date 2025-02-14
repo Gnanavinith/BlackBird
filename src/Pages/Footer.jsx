@@ -7,7 +7,7 @@ const Footer = ({ homeRef, aboutRef, servicesRef, contactRef, scrollToSection })
         
         {/* BlackBird Branding */}
         <div>
-          <h1 className="text-xl font-bold text-black">BlackBird</h1>
+          <h1 className="text-xl font-bold text-black">BlackBirrd</h1>
           <p className="text-gray-700 mt-2">
             We specialize in providing innovative digital solutions to help businesses thrive in a fast-evolving digital world.
           </p>
